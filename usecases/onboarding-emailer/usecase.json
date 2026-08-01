@@ -1,0 +1,14 @@
+{
+  "slug": "onboarding-emailer",
+  "title": "Onboarding Sequence that Skips the Activated",
+  "oneLiner": "Runs a per-user onboarding email sequence — each touch schedules the next, and users who activate simply stop hearing from it.",
+  "primitives": ["schedule", "memory.forUser", "custom-tools"],
+  "smokeTask": {
+    "task": "signup",
+    "args": {
+      "user_id": "u_smoke_1",
+      "email": "smoke@test.example",
+      "name": "Smokey"
+    }
+  }
+}

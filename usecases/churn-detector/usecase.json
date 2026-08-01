@@ -1,0 +1,13 @@
+{
+  "slug": "churn-detector",
+  "title": "Churn Detector on a Weekly Rubric",
+  "oneLiner": "Product events stream into SQLite for free; a weekly rubric pass scores every account and flags the ones drifting toward the exit.",
+  "primitives": ["db", "schedule", "skills"],
+  "smokeTask": {
+    "task": "event",
+    "args": {
+      "account": "smoke-account",
+      "type": "login"
+    }
+  }
+}

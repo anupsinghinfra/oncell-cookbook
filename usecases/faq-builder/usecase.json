@@ -1,0 +1,12 @@
+{
+  "slug": "faq-builder",
+  "title": "FAQ Builder Ranked by Evidence",
+  "oneLiner": "Ingests support transcripts one by one, clusters recurring questions in SQLite, and emits a FAQ ranked by how often customers actually ask.",
+  "primitives": ["db", "files", "llm-loop"],
+  "smokeTask": {
+    "task": "ingest",
+    "args": {
+      "transcript": "Customer: How do I cancel my subscription?\nAgent: Go to Settings, then Billing, then Cancel plan. Your access continues to the end of the period.\nCustomer: Great, and do you refund unused time?\nAgent: We do not offer prorated refunds, but access runs to the period end."
+    }
+  }
+}

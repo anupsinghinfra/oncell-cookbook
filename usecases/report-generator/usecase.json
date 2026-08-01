@@ -1,0 +1,13 @@
+{
+  "slug": "report-generator",
+  "title": "Weekly Report that Writes Itself",
+  "oneLiner": "Metrics trickle in all week as zero-token SQLite inserts; every Monday a polished markdown report compiles itself and books next week.",
+  "primitives": ["db", "files", "schedule"],
+  "smokeTask": {
+    "task": "record",
+    "args": {
+      "metric": "smoke_metric",
+      "value": 42
+    }
+  }
+}

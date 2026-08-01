@@ -1,0 +1,15 @@
+{
+  "slug": "lead-qualifier",
+  "title": "Lead Qualifier that Escalates Only the Borderline",
+  "oneLiner": "Scores inbound leads against your ICP rubric — instant verdicts on the obvious, a $0 park for a human on the borderline.",
+  "primitives": ["skills", "ask_human", "db"],
+  "smokeTask": {
+    "task": "qualify",
+    "args": {
+      "name": "Smoke Test",
+      "company": "none",
+      "email": "student@university.example",
+      "notes": "Student researching tools for a class project, no company, just curious"
+    }
+  }
+}

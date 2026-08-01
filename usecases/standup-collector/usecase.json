@@ -1,0 +1,13 @@
+{
+  "slug": "standup-collector",
+  "title": "Standup Collector that Chases So You Don't",
+  "oneLiner": "Pings every teammate for their update, compiles one tidy standup, posts it — and books its own tomorrow.",
+  "primitives": ["schedule", "memory", "agents", "custom-tools"],
+  "smokeTask": {
+    "task": "submit",
+    "args": {
+      "name": "smoke",
+      "update": "Done: deployed standup-collector. Doing: nothing. Blocked: nothing."
+    }
+  }
+}

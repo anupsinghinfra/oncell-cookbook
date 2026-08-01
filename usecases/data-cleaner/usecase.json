@@ -1,0 +1,13 @@
+{
+  "slug": "data-cleaner",
+  "title": "Data Cleaner that Shows Its Work",
+  "oneLiner": "Drop a messy CSV on it, get back a normalized file plus a counted change report — cleaning rules as a skill, verification by real shell.",
+  "primitives": ["files", "shell", "skills"],
+  "smokeTask": {
+    "task": "clean",
+    "args": {
+      "filename": "smoke.csv",
+      "content": "email,signup date\nDANA@X.COM,01/02/2026\ndana@x.com  ,2026-01-02\nsam@y.com,N/A\n"
+    }
+  }
+}

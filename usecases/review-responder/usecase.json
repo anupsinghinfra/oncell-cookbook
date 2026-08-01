@@ -1,0 +1,15 @@
+{
+  "slug": "review-responder",
+  "title": "Review Responder with a Human Gate on Anger",
+  "oneLiner": "Drafts on-brand replies to app-store and G2 reviews — positives post instantly, negatives park for human sign-off first.",
+  "primitives": ["skills", "ask_human", "memory"],
+  "smokeTask": {
+    "task": "respond",
+    "args": {
+      "source": "g2",
+      "rating": 5,
+      "author": "smoketester",
+      "review": "Setup took 10 minutes and support answered within the hour. Genuinely impressed with the onboarding flow."
+    }
+  }
+}

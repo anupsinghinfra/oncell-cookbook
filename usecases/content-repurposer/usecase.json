@@ -1,0 +1,13 @@
+{
+  "slug": "content-repurposer",
+  "title": "Content Repurposer with a House Voice",
+  "oneLiner": "Turns one blog post into a thread, a LinkedIn post, and a newsletter blurb — voice rules packaged as a versioned skill.",
+  "primitives": ["skills", "files"],
+  "smokeTask": {
+    "task": "repurpose",
+    "args": {
+      "title": "Smoke test post",
+      "post": "We spent three weeks migrating our build system and cut CI times from 40 minutes to 6. The surprising part was not the tooling - it was that half the time went to tests nobody remembered writing, which we deleted after checking coverage. The lesson: measure before you migrate, because the biggest win may be subtraction."
+    }
+  }
+}

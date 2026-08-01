@@ -1,0 +1,13 @@
+{
+  "slug": "competitor-watcher",
+  "title": "Competitor Watcher that Reports Only Diffs",
+  "oneLiner": "Reads competitor changelogs and pricing pages daily, diffs them against memory, and digests only what actually changed.",
+  "primitives": ["memory", "schedule", "custom-tools"],
+  "smokeTask": {
+    "task": "watch",
+    "args": {
+      "name": "smoke-changelog",
+      "url": "https://competitor.example/changelog"
+    }
+  }
+}

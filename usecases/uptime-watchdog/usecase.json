@@ -1,0 +1,13 @@
+{
+  "slug": "uptime-watchdog",
+  "title": "Uptime Watchdog that Only Pages on Changes",
+  "oneLiner": "Probes your endpoints every 5 minutes, remembers incident state, and alerts only on transitions — never twice for the same outage.",
+  "primitives": ["schedule", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "watch",
+    "args": {
+      "name": "smoke-api",
+      "url": "https://api.smoketest.example/health"
+    }
+  }
+}

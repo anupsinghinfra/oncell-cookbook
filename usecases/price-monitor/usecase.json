@@ -1,0 +1,14 @@
+{
+  "slug": "price-monitor",
+  "title": "Competitor Price Monitor with a Memory",
+  "oneLiner": "Watches competitor prices daily, keeps the full history in SQLite, and only speaks up when a move crosses your threshold.",
+  "primitives": ["schedule", "db", "custom-tools"],
+  "smokeTask": {
+    "task": "track",
+    "args": {
+      "name": "Smoke Test Pro plan",
+      "url": "https://competitor.example/pricing",
+      "threshold_pct": 5
+    }
+  }
+}

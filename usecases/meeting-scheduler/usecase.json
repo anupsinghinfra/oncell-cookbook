@@ -1,0 +1,7 @@
+{
+  "slug": "meeting-scheduler",
+  "title": "Meeting Scheduler that Parks Between Rounds",
+  "oneLiner": "Negotiates a meeting time over email, parking at $0 between counter-proposals — one run can span a week of back-and-forth.",
+  "primitives": ["ask_human", "memory", "custom-tools"],
+  "smokeTask": null
+}

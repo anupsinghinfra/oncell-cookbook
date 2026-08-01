@@ -1,0 +1,12 @@
+{
+  "slug": "seo-brief-writer",
+  "title": "SEO Brief Writer with an Editorial Standard",
+  "oneLiner": "Turns a keyword into a complete content brief — outline, entities, FAQs — grounded in SERP data and archived to a brief library.",
+  "primitives": ["files", "skills", "custom-tools"],
+  "smokeTask": {
+    "task": "brief",
+    "args": {
+      "keyword": "smoke test checklist"
+    }
+  }
+}

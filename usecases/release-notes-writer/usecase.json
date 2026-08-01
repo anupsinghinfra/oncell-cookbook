@@ -1,0 +1,13 @@
+{
+  "slug": "release-notes-writer",
+  "title": "Release Notes Writer with House Style",
+  "oneLiner": "Paste a commit log, get customer-facing release notes — grounded by real shell commands, styled by a versioned skill.",
+  "primitives": ["skills", "files", "shell"],
+  "smokeTask": {
+    "task": "write",
+    "args": {
+      "version": "v0.0.1-smoke",
+      "commits": "feat: bulk export to CSV\nfix: crash when search box is empty\nchore: bump dependencies"
+    }
+  }
+}
