@@ -112,7 +112,7 @@ function validateManifest(slug, manifest) {
 
 function validateUsecase(slug, usecase) {
   if (!isPlainObject(usecase)) return fail(slug, "usecase.json must be an object");
-  checkKeys(slug, "usecase", usecase, ["slug", "title", "oneLiner", "primitives", "smokeTask"]);
+  checkKeys(slug, "usecase", usecase, ["slug", "title", "oneLiner", "primitives", "smokeTask", "video"]);
 
   if (usecase.slug !== slug) fail(slug, `usecase.slug ("${usecase.slug}") must equal the directory name`);
   if (!isNonEmptyString(usecase.title)) fail(slug, "usecase.title is required");
