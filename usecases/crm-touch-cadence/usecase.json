@@ -1,0 +1,15 @@
+{
+  "slug": "crm-touch-cadence",
+  "title": "Relationship Cadence that Scores Decay Every Morning",
+  "oneLiner": "Scores your whole network for relationship decay at each daily wake and hands you the 3 most overdue people, openers drafted.",
+  "primitives": ["schedule", "db", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "add-contact",
+    "args": {
+      "name": "Smoke Contact",
+      "email": "smoke@test.example",
+      "relationship": "met at the cookbook launch",
+      "importance": 2
+    }
+  }
+}

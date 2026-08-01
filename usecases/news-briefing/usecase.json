@@ -1,0 +1,12 @@
+{
+  "slug": "news-briefing",
+  "title": "Daily Brief that Learns What You Actually Read",
+  "oneLiner": "A daily topical brief whose emphasis drifts with your feedback — zero-LLM weight updates today, a differently-shaped brief tomorrow.",
+  "primitives": ["schedule", "memory", "files", "custom-tools"],
+  "smokeTask": {
+    "task": "set-topics",
+    "args": {
+      "topics": ["smoke testing", "agent runtimes"]
+    }
+  }
+}

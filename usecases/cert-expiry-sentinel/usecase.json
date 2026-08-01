@@ -1,0 +1,14 @@
+{
+  "slug": "cert-expiry-sentinel",
+  "title": "Cert Sentinel with Deadline-Countdown Wakes",
+  "oneLiner": "Warns at 30/7/1 days before every cert expiry — each warning fired by a wake computed to land at the exact threshold instant.",
+  "primitives": ["schedule", "db", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "add-cert",
+    "args": {
+      "domain": "smoke.example",
+      "kind": "tls-cert",
+      "expires_at": "2027-01-01T00:00:00Z"
+    }
+  }
+}

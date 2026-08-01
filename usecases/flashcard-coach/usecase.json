@@ -1,0 +1,13 @@
+{
+  "slug": "flashcard-coach",
+  "title": "Spaced Repetition as Per-Card Wake Chains",
+  "oneLiner": "Every flashcard owns its own wake chain — SM-2 computes each card's next review instant from your grade, and the runtime keeps 500 clocks.",
+  "primitives": ["schedule", "db", "ask_human", "memory"],
+  "smokeTask": {
+    "task": "add-card",
+    "args": {
+      "front": "Smoke test: which task arms the review chains?",
+      "back": "start - adding cards never schedules anything"
+    }
+  }
+}

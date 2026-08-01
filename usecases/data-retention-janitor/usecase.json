@@ -1,0 +1,13 @@
+{
+  "slug": "data-retention-janitor",
+  "title": "The Janitor that Cleans Its Own Cell",
+  "oneLiner": "Applies declared retention rules to its own database and files every week, and publishes an exact accounting of what it purged.",
+  "primitives": ["schedule", "db", "files", "memory"],
+  "smokeTask": {
+    "task": "set-rules",
+    "args": {
+      "events_days": 30,
+      "reports_keep": 12
+    }
+  }
+}

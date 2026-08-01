@@ -1,0 +1,13 @@
+{
+  "slug": "social-scheduler",
+  "title": "Social Queue with Two Clocks in One Agent",
+  "oneLiner": "Publishes one queued post a day and writes a weekly engagement rollup — two interleaved wake chains running through a single agent.",
+  "primitives": ["schedule", "db", "files", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "queue-post",
+    "args": {
+      "platform": "linkedin",
+      "text": "Smoke test: oncell-cookbook deployed social-scheduler successfully."
+    }
+  }
+}

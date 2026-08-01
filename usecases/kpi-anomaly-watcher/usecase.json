@@ -1,0 +1,13 @@
+{
+  "slug": "kpi-anomaly-watcher",
+  "title": "KPI Watcher that Only Speaks When Numbers Get Weird",
+  "oneLiner": "Metrics stream in for free; a daily wake rebuilds z-score baselines and alerts only past 2.5 sigma — silence is the deliverable.",
+  "primitives": ["schedule", "db", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "record",
+    "args": {
+      "metric": "smoke-signups",
+      "value": 42
+    }
+  }
+}

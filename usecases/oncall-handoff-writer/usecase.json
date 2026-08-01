@@ -1,0 +1,15 @@
+{
+  "slug": "oncall-handoff-writer",
+  "title": "On-Call Handoffs Written at the Rotation Boundary",
+  "oneLiner": "Incidents stream into its log free all week; when the rotation turns, the wake compresses the week into a handoff doc for the next engineer.",
+  "primitives": ["schedule", "db", "files", "memory"],
+  "smokeTask": {
+    "task": "log-incident",
+    "args": {
+      "severity": "sev3",
+      "title": "Smoke test incident",
+      "summary": "Logged by the cookbook smoke suite; safe to ignore",
+      "resolved": true
+    }
+  }
+}

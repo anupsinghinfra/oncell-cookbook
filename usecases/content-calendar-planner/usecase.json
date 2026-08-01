@@ -1,0 +1,12 @@
+{
+  "slug": "content-calendar-planner",
+  "title": "Content Calendar with a Planner and an Executor",
+  "oneLiner": "A weekly planning wake turns the backlog into a Mon-Fri plan file; a cheap daily wake reads it back and says what today is for.",
+  "primitives": ["schedule", "db", "files", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "add-idea",
+    "args": {
+      "topic": "Smoke test: why zero-token ingest paths matter"
+    }
+  }
+}

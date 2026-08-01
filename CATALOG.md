@@ -46,6 +46,36 @@ to start. Do not rename slugs; other tasks and links depend on them.
 | `data-cleaner` | Normalizes messy CSV/JSON dropped into its files — dedupe, canonical formats — cleaning rules as a skill. | `files`, `shell`, `skills` |
 | `churn-detector` | Ingests product-usage events into SQLite, scores accounts weekly against a churn rubric, flags the risky ones. | `db`, `schedule`, `skills` |
 
+## Scheduled agents
+
+A 16-agent collection built around the `schedule` primitive. Each one
+demonstrates a **distinct scheduling pattern**, named and explained in its
+blog. Shared conventions on top of the ground rules above: a wake-note
+protocol in every identity ("a note reading X means..."), an explicit
+`start`/`stop` task pair for every self-rebooking chain (`stop` is a
+zero-LLM state flag the next wake reads and obeys — stand-down through
+state, never cancellation), zero-LLM ingest/config paths wherever data
+enters, and smoke tasks that never start a wake chain.
+
+| Slug | Scheduling pattern | One-liner |
+|---|---|---|
+| `cert-expiry-sentinel` | Deadline countdown — wakes at computed absolute `at` instants | Escalating 30/7/1-day expiry warnings, each fired at the exact threshold moment. |
+| `dependency-update-scout` | Steady cadence — the simplest self-rebooking chain | Weekly registry sweep ending in a risk-ordered upgrade note. |
+| `social-scheduler` | Interleaved cadences — two note-dispatched chains, one agent | Daily publish from a queued-posts table + weekly engagement rollup. |
+| `backup-auditor` | Cadence with a human gate — fast automated loop + slow loop that parks | Daily backup verify (haiku) + monthly restore drill on `ask_human`. |
+| `kpi-anomaly-watcher` | Wake-and-compare — baselines in memory, silence as the default | Daily z-score pass over free-streaming metrics; alerts only past 2.5 sigma. |
+| `meeting-prep-briefer` | Weekday-only self-rebooking — computed next-weekday `at` | Weekday-morning calendar briefs; Friday books Monday. |
+| `subscription-auditor` | Long-period cadence — a 30-day chain that cannot rot | Monthly SaaS ledger sweep; every cancellation gated behind a human. |
+| `crm-touch-cadence` | Decay scoring at wake — no per-item timers, rank at read time | Daily pick of the 3 coldest relationships, openers drafted. |
+| `content-calendar-planner` | Planner/executor split — expensive weekly wake writes, cheap daily wake reads | Weekly plan file + daily reminder wakes that only read it. |
+| `retro-facilitator` | Multi-phase cycle — one event across phased wakes (open → remind → close) | Biweekly retro window with mid-window nudge and closing synthesis. |
+| `oncall-handoff-writer` | Report-at-boundary — free ingest all period, judgment at the edge | Weekly handoff doc compiled from the incident log at rotation turn. |
+| `seo-rank-tracker` | Two-speed telemetry — fine ingest cadence + coarse analysis cadence | Daily haiku position logging + weekly trend report. |
+| `flashcard-coach` | **Per-item wake chains** (flagship) — every row owns its own timeline | SM-2 spaced repetition; each card books its own next review wake. |
+| `stale-pr-nagger` | Fatigue-aware cadence — per-recipient memory rations the reminders | Weekday-morning PR nags: one bundled message per reviewer, three per week. |
+| `data-retention-janitor` | Self-maintenance cadence — the agent is its own operand | Weekly sweep of its own db/files by declared rules, with purge receipts. |
+| `news-briefing` | Preference-tuned cadence — fixed clock, drifting state | Daily brief whose topic weights are tuned by zero-LLM reader feedback. |
+
 ## When you finish a batch
 
 Run `npm run validate` (must pass with zero problems), then

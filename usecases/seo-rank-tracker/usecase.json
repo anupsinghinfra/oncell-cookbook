@@ -1,0 +1,12 @@
+{
+  "slug": "seo-rank-tracker",
+  "title": "Rank Tracker on Two Clocks",
+  "oneLiner": "Logs every keyword's search position daily for pennies, then writes one weekly trend report — movers first, wiggles ignored.",
+  "primitives": ["schedule", "db", "files", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "track",
+    "args": {
+      "keyword": "oncell cookbook smoke"
+    }
+  }
+}

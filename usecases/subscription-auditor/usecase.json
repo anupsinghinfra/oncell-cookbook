@@ -1,0 +1,15 @@
+{
+  "slug": "subscription-auditor",
+  "title": "Monthly SaaS Audit with a Human on the Trigger",
+  "oneLiner": "Sweeps the SaaS ledger every 30 days, flags zombie subscriptions, and asks a human before drafting a single cancellation.",
+  "primitives": ["schedule", "db", "ask_human", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "upsert-subscription",
+    "args": {
+      "vendor": "SmokeSaaS",
+      "amount_usd": 99,
+      "cadence": "monthly",
+      "owner": "qa"
+    }
+  }
+}

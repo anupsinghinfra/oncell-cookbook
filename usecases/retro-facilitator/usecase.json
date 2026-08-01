@@ -1,0 +1,13 @@
+{
+  "slug": "retro-facilitator",
+  "title": "Biweekly Retro as a Three-Phase Wake Cycle",
+  "oneLiner": "Opens a retro window, nudges mid-window, and synthesizes themes at close — one cycle spread across three phased wakes, no meeting.",
+  "primitives": ["schedule", "db", "memory", "files", "custom-tools"],
+  "smokeTask": {
+    "task": "add-entry",
+    "args": {
+      "author": "smoke",
+      "text": "Smoke test: the validate script caught my manifest drift before deploy did"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "slug": "meeting-prep-briefer",
+  "title": "Weekday Meeting Briefs that Skip the Weekend",
+  "oneLiner": "Turns each weekday's calendar into one-page meeting briefs — and computes its own next weekday wake, so Friday books Monday.",
+  "primitives": ["schedule", "memory", "files", "custom-tools"],
+  "smokeTask": {
+    "task": "add-context",
+    "args": {
+      "name": "Smoke Tester",
+      "note": "Runs the cookbook smoke suite, cares about zero-token ingest paths"
+    }
+  }
+}

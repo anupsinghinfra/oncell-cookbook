@@ -1,0 +1,13 @@
+{
+  "slug": "stale-pr-nagger",
+  "title": "PR Nagger that Remembers Who It Already Nagged",
+  "oneLiner": "Weekday-morning review reminders with per-reviewer fatigue memory — one bundled message per person, three per week, tone that de-escalates itself.",
+  "primitives": ["schedule", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "snooze",
+    "args": {
+      "reviewer": "smoke-reviewer",
+      "days": 1
+    }
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "backup-auditor",
+  "title": "Backup Auditor that Demands a Monthly Restore",
+  "oneLiner": "Verifies every backup daily for pennies — and once a month parks on a human until someone actually restores one.",
+  "primitives": ["schedule", "db", "ask_human", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "add-job",
+    "args": {
+      "job": "smoke-nightly"
+    }
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "slug": "dependency-update-scout",
+  "title": "Weekly Dependency Scout with Written Upgrade Notes",
+  "oneLiner": "Sweeps your dependency list against the registry every week and writes one risk-ordered upgrade note — majors first, routine bumps after.",
+  "primitives": ["schedule", "db", "files", "memory", "custom-tools"],
+  "smokeTask": {
+    "task": "set-deps",
+    "args": {
+      "deps": [
+        { "name": "smoke-pkg", "version": "1.0.0" }
+      ]
+    }
+  }
+}
