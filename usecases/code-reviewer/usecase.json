@@ -1,0 +1,13 @@
+{
+  "slug": "code-reviewer",
+  "title": "Code Reviewer with a Real Shell",
+  "oneLiner": "Paste a diff, get a senior-engineer review — produced in a sandbox where the agent runs grep on the patch instead of guessing.",
+  "primitives": ["shell", "files", "llm-loop"],
+  "smokeTask": {
+    "task": "review",
+    "args": {
+      "title": "Fix off-by-one in pagination",
+      "diff": "--- a/pagination.js\n+++ b/pagination.js\n@@ -1,4 +1,4 @@\n function pageCount(total, pageSize) {\n-  return Math.floor(total / pageSize);\n+  return Math.ceil(total / pageSize);\n }\n"
+    }
+  }
+}

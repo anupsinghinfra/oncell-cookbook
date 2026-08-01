@@ -1,0 +1,12 @@
+{
+  "slug": "daily-digest",
+  "title": "Self-Scheduling Morning Digest",
+  "oneLiner": "Compiles a crisp morning briefing from the team's notes, then schedules its own tomorrow — no cron box anywhere.",
+  "primitives": ["schedule", "db", "files", "memory"],
+  "smokeTask": {
+    "task": "add-note",
+    "args": {
+      "text": "Smoke test: oncell-cookbook deployed daily-digest successfully."
+    }
+  }
+}

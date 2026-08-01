@@ -1,0 +1,14 @@
+{
+  "slug": "inbox-triager",
+  "title": "Inbox Triager on a Haiku Budget",
+  "oneLiner": "Labels, prioritizes, and suggests an action for every email — with skills as packaged procedures and a memory of every sender.",
+  "primitives": ["skills", "memory", "memory.transact", "llm-loop"],
+  "smokeTask": {
+    "task": "triage",
+    "args": {
+      "from": "updates@saasweekly.example",
+      "subject": "SaaS Weekly #204: pricing page teardowns",
+      "body": "This week we tore down ten pricing pages and found the same three mistakes on eight of them. Plus: a new benchmark on trial-to-paid conversion."
+    }
+  }
+}

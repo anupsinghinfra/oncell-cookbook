@@ -1,0 +1,14 @@
+{
+  "slug": "expense-approver",
+  "title": "Expense Approver that Waits for Humans",
+  "oneLiner": "Auto-approves small expenses, parks at $0 waiting for a human on big ones — and survives crashes while it waits.",
+  "primitives": ["ask_human", "budgets", "db", "skills"],
+  "smokeTask": {
+    "task": "approve-expense",
+    "args": {
+      "requester": "smoke-test",
+      "amount_usd": 12.5,
+      "description": "Team coffee for sprint review"
+    }
+  }
+}

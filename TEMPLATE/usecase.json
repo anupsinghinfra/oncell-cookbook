@@ -1,0 +1,12 @@
+{
+  "slug": "my-agent",
+  "title": "My Agent Does One Thing Well",
+  "oneLiner": "One sentence, under 140 characters, that sells what this agent does for you.",
+  "primitives": ["memory", "skills"],
+  "smokeTask": {
+    "task": "run",
+    "args": {
+      "input": "A cheap input: the smoke task must finish in at most one small LLM turn. Use null instead if every path would park on a human."
+    }
+  }
+}

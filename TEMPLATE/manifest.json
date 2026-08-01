@@ -1,0 +1,23 @@
+{
+  "identity": {
+    "instructions": "You are my-agent, a one-sentence description of who this agent is.\n\nHow you work:\n- Which durable state you own (memory keys, SQLite tables, file paths) and when to touch it.\n\nTasks you receive:\n- run { input }: what to do and exactly what to answer.",
+    "model": "claude-sonnet",
+    "budgets": {
+      "perDayCents": 100
+    }
+  },
+  "capabilities": [
+    "memory"
+  ],
+  "skills": [
+    {
+      "name": "my-skill",
+      "description": "When to use this skill, in one line - this text is always in context.",
+      "instructions": "The full procedure, loaded only when the work calls for it:\n1. Step one.\n2. Step two.",
+      "tools": [
+        "my_tool",
+        "memory"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,12 @@
+{
+  "slug": "support-agent",
+  "title": "Support Agent with Per-Customer Memory",
+  "oneLiner": "Customer support that remembers every customer — and can't refund a cent without human approval.",
+  "primitives": ["memory.forUser", "skills", "ask_human", "custom-tools"],
+  "smokeTask": {
+    "task": "chat",
+    "args": {
+      "message": "Hi! Do you ship to Canada, and what is your return window?"
+    }
+  }
+}
